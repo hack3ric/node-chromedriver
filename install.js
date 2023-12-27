@@ -83,7 +83,7 @@ if (skipDownload) {
 function getPlatform(chromedriverVersion) {
   const thePlatform = process.platform;
   if (thePlatform === 'linux') {
-    if (process.arch === 'arm64' || process.arch === 's390x' || process.arch === 'x64') {
+    if (process.arch === 'arm64' || process.arch === 'riscv64' || process.arch === 's390x' || process.arch === 'x64') {
       return 'linux64';
     } else {
       console.log('Only Linux 64 bits supported.');
